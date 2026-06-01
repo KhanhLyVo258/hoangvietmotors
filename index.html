@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trả góp xe máy</title>
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <span class="nav-logo-name"><em><img src="Logo_HV-01.png"></em></span>
+    </a>
+
+    <div class="nav-right">
+      <a href="#" class="topbar-phone">
+        <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.7 9.4a19.79 19.79 0 01-3.07-8.64A2 2 0 012.59 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.5a16 16 0 006.59 6.59l1.86-1.86a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span>
+        Số hotline: <strong>0931 434 648</strong> - <strong>0901 264 949</strong>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Hỗ trợ trả góp <em>xe máy</em><br>thủ tục nhanh gọn</h1>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ══════════════════ MAIN 2-COL ══════════════════ -->
+<div class="main-wrap">
+
+  <!-- STEP 1 — LOAN CALCULATOR -->
+  <div class="step-card">
+    <div class="step-card-head">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Khoản vay</h3>
+        <p>Nhập thông tin để ước tính khoản vay</p>
+      </div>
+    </div>
+    <div class="step-card-body">
+
+      <!-- Doc type -->
+      <div class="field">
+        <div class="field-label">Giấy tờ bạn có</div>
+        <div class="doc-tabs">
+          <button class="doc-tab active">Căn cước công dân</button>
+
+        </div>
+      </div>
+
+      <!-- Loan amount -->
+      <div class="field">
+        <div class="field-label">
+          Số tiền vay
+          <span class="val">5,000,000 VNĐ</span>
+        </div>
+        <input type="range" min="5000000" max="100000000" step="500000" value="3000000">
+        <div class="range-ends"><span>100,000,000 VNĐ</span><span>100,000,000 VNĐ</span></div>
+      </div>
+
+      <!-- Term -->
+      <div class="field">
+        <div class="field-label">
+          Thời gian vay
+          <span class="val">6 tháng</span>
+        </div>
+        <input type="range" min="6" max="36" step="6" value="6">
+        <div class="range-ends"><span>6 tháng</span><span>36 tháng</span></div>
+      </div>
+
+      <!-- Result -->
+      <div class="result-box">
+        <div class="result-box-label">Khoản thanh toán hàng tháng</div>
+        <div class="result-box-val">—</div>
+        <div class="result-box-unit">VNĐ / tháng</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- STEP 2 — CONTACT FORM -->
+  <div class="step-card">
+    <div class="step-card-head">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Liên hệ vay nhanh</h3>
+        <p>Điền thông tin để được tư vấn miễn phí</p>
+      </div>
+    </div>
+    <div class="step-card-body">
+
+      <div class="cf-row">
+        <div class="cf-col">
+          <label class="cf-label">Họ và tên <span class="req">*</span></label>
+          <input class="cf-input" type="text" placeholder="Họ và tên">
+        </div>
+        <div class="cf-col">
+          <label class="cf-label">Số điện thoại <span class="req">*</span></label>
+          <input class="cf-input" type="tel" placeholder="09xxxxxxxx">
+        </div>
+      </div>
+
+      <div class="cf-row">
+        <div class="cf-col">
+          <label class="cf-label">Loại xe <span class="req">*</span></label>
+  
+          <div class="moto-search-wrapper">
+            <input class="cf-input moto-search-field" id="moto-search-input-id" type="text" placeholder="Chọn hoặc nhập tìm kiếm dòng xe..." autocomplete="off">
+    
+            <div class="moto-search-list" id="moto-search-dropdown-id">
+          </div>
+        </div>
+      </div>
+        
+        <div class="cf-col">
+          <label class="cf-label">Email</label>
+          <input class="cf-input" type="email" placeholder="email@gmail.com">
+        </div>
+      </div>
+
+      <div class="cf-full">
+        <label class="cf-label">Nơi ở hiện tại <span class="req">*</span></label>
+        <select class="cf-select">
+          <option value="">Vui lòng chọn tỉnh / thành</option>
+          <option>Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option>
+          <option>Bình Dương</option><option>Đồng Nai</option><option>Cần Thơ</option>
+          <option>An Giang</option><option>Bà Rịa - Vũng Tàu</option><option>Bắc Giang</option>
+          <option>Bắc Ninh</option><option>Bến Tre</option><option>Bình Định</option>
+          <option>Bình Phước</option><option>Bình Thuận</option><option>Cà Mau</option>
+          <option>Cao Bằng</option><option>Điện Biên</option><option>Đắk Lắk</option>
+          <option>Đắk Nông</option><option>Đồng Tháp</option><option>Gia Lai</option>
+          <option>Hà Giang</option><option>Hà Nam</option><option>Hà Tĩnh</option>
+          <option>Hải Dương</option><option>Hải Phòng</option><option>Hậu Giang</option>
+          <option>Hòa Bình</option><option>Hưng Yên</option><option>Khánh Hòa</option>
+          <option>Kiên Giang</option><option>Kon Tum</option><option>Lai Châu</option>
+          <option>Lào Cai</option><option>Lâm Đồng</option><option>Lạng Sơn</option>
+          <option>Long An</option><option>Nam Định</option><option>Nghệ An</option>
+          <option>Ninh Bình</option><option>Ninh Thuận</option><option>Phú Thọ</option>
+          <option>Phú Yên</option><option>Quảng Bình</option><option>Quảng Nam</option>
+          <option>Quảng Ngãi</option><option>Quảng Ninh</option><option>Quảng Trị</option>
+          <option>Sóc Trăng</option><option>Sơn La</option><option>Tây Ninh</option>
+          <option>Thái Bình</option><option>Thái Nguyên</option><option>Thanh Hóa</option>
+          <option>Thừa Thiên Huế</option><option>Tiền Giang</option><option>Trà Vinh</option>
+          <option>Tuyên Quang</option><option>Vĩnh Long</option><option>Vĩnh Phúc</option><option>Yên Bái</option>
+        </select>
+      </div>
+
+
+      <div class="cf-full">
+        <label class="cf-label">Thời gian tư vấn mong muốn </label>
+        <div class="dob-row">
+          <select id="consult-hour" class="cf-select">
+            <option value="Giờ" selected>Giờ</option>
+            <option value="09">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+          </select>
+        
+          <input type="date" id="consult-date" class="cf-date-input">
+        </div>
+      </div>
+
+      <button class="submit-btn">GỬI YÊU CẦU TƯ VẤN</button>
+    </div>
+  </div>
+
+</div><!-- /main-wrap -->
+
+<!-- ══════════════════ PROCESS ══════════════════ -->
+<section class="process">
+  <div class="process-inner">
+    <div class="process-heading">
+      <h2>CÁC BƯỚC VAY MUA XE MÁY</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-circle">1</div>
+        <div class="step-item-title">Chọn xe</div>
+        <div class="step-item-desc">Đến cửa hàng liên kết gần nhất để chọn xe</div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">2</div>
+        <div class="step-item-title">Tư vấn vay</div>
+        <div class="step-item-desc">Liên hệ số hotline để được tư vấn</div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">3</div>
+        <div class="step-item-title">Cung cấp hồ sơ</div>
+        <div class="step-item-desc">CMND, Hộ khẩu, giấy tờ theo hướng dẫn</div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">4</div>
+        <div class="step-item-title">Thanh toán trước</div>
+        <div class="step-item-desc">Thanh toán khoản trả trước tại cửa hàng</div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">5</div>
+        <div class="step-item-title">Ký hợp đồng</div>
+        <div class="step-item-desc">Ký hợp đồng theo đúng quy định pháp luật</div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">6</div>
+        <div class="step-item-title">Nhận xe</div>
+        <div class="step-item-desc">Nhận xe tại cửa hàng liên kết</div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">7</div>
+        <div class="step-item-title">Trả hàng tháng</div>
+        <div class="step-item-desc">Thanh toán theo lịch được cung cấp</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PROMO ══════════════════ -->
+<div class="promo">
+  <div class="promo-inner">
+    <div class="promo-header">
+      <h4>Danh Sách Chi Nhánh Hoàng Việt</h4>
+      <div class="promo-divider"></div>
+    </div>
+    
+    <div class="promo-branch-grid">
+      
+      <div class="promo-branch-card">
+        <h5 class="promo-branch-name">Hồ Chí Minh - Motor Hoàng Việt</h5>
+        <div class="promo-branch-info">
+          <p class="promo-info-item"><span class="promo-icon">📍</span><strong>Địa chỉ:</strong> 02 Lãnh Binh Thăng - Phường 13 - Quận 11 - TP.Hồ Chí Minh</p>
+          <p class="promo-info-item"><span class="promo-icon">📞</span><strong>Hotline:</strong> <a href="tel:02839621096">(028) 3962 1096</a></p>
+          <p class="promo-info-item"><span class="promo-icon">🕒</span><strong>Giờ hoạt động:</strong> 8:00 - 18:00</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Motor+Hoàng+Việt+02+Lãnh+Binh+Thăng" target="_blank" class="promo-map-link">
+          <span class="promo-icon-nav">↗</span> Chỉ đường
+        </a>
+      </div>
+
+      <div class="promo-branch-card">
+        <h5 class="promo-branch-name">Hồ Chí Minh - Hoàng Việt 1</h5>
+        <div class="promo-branch-info">
+          <p class="promo-info-item"><span class="promo-icon">📍</span><strong>Địa chỉ:</strong> 335 Lê Đại Hành - Phường 13 - Quận 11 - TP.Hồ Chí Minh</p>
+          <p class="promo-info-item"><span class="promo-icon">📞</span><strong>Hotline:</strong> <a href="tel:02839621091">(028) 3962 1091</a></p>
+          <p class="promo-info-item"><span class="promo-icon">🕒</span><strong>Giờ hoạt động:</strong> 8:00 - 19:00</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Honda+Hoàng+Việt+1+335+Lê+Đại+Hành" target="_blank" class="promo-map-link">
+          <span class="promo-icon-nav">↗</span> Chỉ đường
+        </a>
+      </div>
+
+      <div class="promo-branch-card">
+        <h5 class="promo-branch-name">Hồ Chí Minh - Hoàng Việt 2</h5>
+        <div class="promo-branch-info">
+          <p class="promo-info-item"><span class="promo-icon">📍</span><strong>Địa chỉ:</strong> 631 - 635 - 639 Phạm Thế Hiển - Phường 4 - Quận 8 - TP.Hồ Chí Minh</p>
+          <p class="promo-info-item"><span class="promo-icon">📞</span><strong>Hotline:</strong> <a href="tel:02838521749">(028) 3852 1749</a></p>
+          <p class="promo-info-item"><span class="promo-icon">🕒</span><strong>Giờ hoạt động:</strong> 8:00 - 19:00</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Honda+Hoàng+Việt+2+Phạm+Thế+Hiển" target="_blank" class="promo-map-link">
+          <span class="promo-icon-nav">↗</span> Chỉ đường
+        </a>
+      </div>
+
+      <div class="promo-branch-card">
+        <h5 class="promo-branch-name">Hồ Chí Minh - Hoàng Việt 4</h5>
+        <div class="promo-branch-info">
+          <p class="promo-info-item"><span class="promo-icon">📍</span><strong>Địa chỉ:</strong> 290 Dương Bá Trạc - Phường 1 - Quận 8 - TP.Hồ Chí Minh</p>
+          <p class="promo-info-item"><span class="promo-icon">📞</span><strong>Hotline:</strong> <a href="tel:02838525101">(028) 3852 5101</a></p>
+          <p class="promo-info-item"><span class="promo-icon">🕒</span><strong>Giờ hoạt động:</strong> 8:00 - 19:00</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Honda+Hoàng+Việt+4+Dương+Bá+Trạc" target="_blank" class="promo-map-link">
+          <span class="promo-icon-nav">↗</span> Chỉ đường
+        </a>
+      </div>
+
+      <div class="promo-branch-card">
+        <h5 class="promo-branch-name">Bình Dương - Hoàng Việt 5</h5>
+        <div class="promo-branch-info">
+          <p class="promo-info-item"><span class="promo-icon">📍</span><strong>Địa chỉ:</strong> 355 Phú Lợi - Phường Phú Lợi - Thủ Dầu Một - T.Bình Dương</p>
+          <p class="promo-info-item"><span class="promo-icon">📞</span><strong>Hotline:</strong> <a href="tel:02743868355">(0274) 386 8355</a></p>
+          <p class="promo-info-item"><span class="promo-icon">🕒</span><strong>Giờ hoạt động:</strong> 8:00 - 19:00</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Honda+Hoàng+Việt+5+Phú+Lợi+Bình+Dương" target="_blank" class="promo-map-link">
+          <span class="promo-icon-nav">↗</span> Chỉ đường
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="module" src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">HoangViet<em>Honda</em></div>
+  </div>
+</footer>
+</body>
+</html>
