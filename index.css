@@ -597,8 +597,8 @@ input[type="range"]::-moz-range-thumb {
 .result-meta-item .m-val { font-size: 13px; font-weight: 700; color: var(--ink); margin-top: 1px; }
 
 .result-note {
-  font-size: 11px;
-  color: var(--ink-4);
+  font-size: 14px;
+  color: var(--red);
   line-height: 1.7;
   padding-top: 16px;
   border-top: 1px solid var(--border);
