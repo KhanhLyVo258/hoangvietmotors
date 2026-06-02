@@ -2,9 +2,9 @@
 // index.js — HoangViet Motors (BẢN VẠN NĂNG THẾ HỆ MỚI - SỬA LỖI TRỘN KHUNG)
 // ============================================================
 
-const EMAILJS_PUBLIC_KEY  = 'dmcYr1M1K9V45Q18B';
-const EMAILJS_SERVICE_ID  = 'service_ts3osyy';
-const EMAILJS_TEMPLATE_ID = 'template_2bntc3p';
+const EMAILJS_PUBLIC_KEY  = '5v8sWjS44vREWeUw9';
+const EMAILJS_SERVICE_ID  = 'service_ree9v7t';
+const EMAILJS_TEMPLATE_ID = 'template_zsgcjoe';
 
 (function autoLoadEmailJS() {
     if (typeof emailjs === 'undefined') {
